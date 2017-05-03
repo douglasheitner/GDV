@@ -14,21 +14,29 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="E72-X0-QiM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XUD-8g-0Lm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="nJ4-vv-iR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-HO-znW">
-                                <rect key="frame" x="117.5" y="283.5" width="140" height="60"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-2H-UZP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-hg-ltO">
+                                        <rect key="frame" x="122" y="269" width="130" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rB1-HO-znW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="Mz0-98-f6B"/>
-                            <constraint firstItem="rB1-HO-znW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tha-C5-xiZ"/>
+                            <constraint firstItem="7V5-2H-UZP" firstAttribute="leading" secondItem="nJ4-vv-iR3" secondAttribute="leading" id="4PB-ZP-mjN"/>
+                            <constraint firstAttribute="trailing" secondItem="7V5-2H-UZP" secondAttribute="trailing" id="UA3-9w-0nk"/>
+                            <constraint firstItem="7V5-2H-UZP" firstAttribute="top" secondItem="nJ4-vv-iR3" secondAttribute="top" id="Uuk-8p-0wM"/>
+                            <constraint firstItem="XUD-8g-0Lm" firstAttribute="top" secondItem="7V5-2H-UZP" secondAttribute="bottom" id="xtS-Pw-W9C"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -39,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash-logo" width="140" height="60"/>
+        <image name="slash-logo" width="257" height="257"/>
     </resources>
 </document>

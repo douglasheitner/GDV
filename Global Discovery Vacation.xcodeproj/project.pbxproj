@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50E797E1EB7D1A2006E4521 /* MembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E797D1EB7D1A2006E4521 /* MembershipViewController.swift */; };
+		A50E79801EB7D855006E4521 /* ReservationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E797F1EB7D855006E4521 /* ReservationDetailsViewController.swift */; };
+		A50E79851EB7DD88006E4521 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E79841EB7DD88006E4521 /* Reservation.swift */; };
+		A50E79871EB7DD9E006E4521 /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E79861EB7DD9E006E4521 /* Membership.swift */; };
 		A53B77411EAAA1880076C10D /* ReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B77401EAAA1880076C10D /* ReservationCell.swift */; };
+		A5665DF11EB7A232001AC32D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5665DF01EB7A232001AC32D /* MainViewController.swift */; };
 		A569DD981EAA731000A32BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569DD971EAA731000A32BBE /* AppDelegate.swift */; };
-		A569DD9A1EAA731000A32BBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569DD991EAA731000A32BBE /* HomeViewController.swift */; };
+		A569DD9A1EAA731000A32BBE /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569DD991EAA731000A32BBE /* ReservationViewController.swift */; };
 		A569DD9F1EAA731000A32BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A569DD9E1EAA731000A32BBE /* Assets.xcassets */; };
 		A569DDA21EAA731000A32BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A569DDA01EAA731000A32BBE /* LaunchScreen.storyboard */; };
+		A57E18761EBA6B2300F8CA9C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E18751EBA6B2300F8CA9C /* LoginViewController.swift */; };
+		A5B024D21EBA3FE50073C681 /* ScrollingTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B024D11EBA3FE50073C681 /* ScrollingTabBarAnimation.swift */; };
+		A5B024D41EBA4BDC0073C681 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B024D31EBA4BDC0073C681 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A50E797D1EB7D1A2006E4521 /* MembershipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipViewController.swift; sourceTree = "<group>"; };
+		A50E797F1EB7D855006E4521 /* ReservationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationDetailsViewController.swift; sourceTree = "<group>"; };
+		A50E79841EB7DD88006E4521 /* Reservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		A50E79861EB7DD9E006E4521 /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
 		A53B77401EAAA1880076C10D /* ReservationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationCell.swift; sourceTree = "<group>"; };
+		A5665DF01EB7A232001AC32D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A569DD941EAA731000A32BBE /* Global Discovery Vacation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Discovery Vacation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A569DD971EAA731000A32BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A569DD991EAA731000A32BBE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A569DD991EAA731000A32BBE /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		A569DD9E1EAA731000A32BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A569DDA11EAA731000A32BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A569DDA31EAA731000A32BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57E18751EBA6B2300F8CA9C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A5B024D11EBA3FE50073C681 /* ScrollingTabBarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTabBarAnimation.swift; sourceTree = "<group>"; };
+		A5B024D31EBA4BDC0073C681 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50E79811EB7DD43006E4521 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A50E79841EB7DD88006E4521 /* Reservation.swift */,
+				A50E79861EB7DD9E006E4521 /* Membership.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A50E79821EB7DD4A006E4521 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A53B77401EAAA1880076C10D /* ReservationCell.swift */,
+				A5B024D11EBA3FE50073C681 /* ScrollingTabBarAnimation.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A50E79831EB7DD51006E4521 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5665DF01EB7A232001AC32D /* MainViewController.swift */,
+				A50E797F1EB7D855006E4521 /* ReservationDetailsViewController.swift */,
+				A50E797D1EB7D1A2006E4521 /* MembershipViewController.swift */,
+				A569DD991EAA731000A32BBE /* ReservationViewController.swift */,
+				A5B024D31EBA4BDC0073C681 /* HelpViewController.swift */,
+				A57E18751EBA6B2300F8CA9C /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		A569DD8B1EAA731000A32BBE = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				A569DD971EAA731000A32BBE /* AppDelegate.swift */,
-				A569DD991EAA731000A32BBE /* HomeViewController.swift */,
+				A50E79831EB7DD51006E4521 /* Controller */,
+				A50E79821EB7DD4A006E4521 /* View */,
+				A50E79811EB7DD43006E4521 /* Model */,
 				A569DD9E1EAA731000A32BBE /* Assets.xcassets */,
 				A569DDA01EAA731000A32BBE /* LaunchScreen.storyboard */,
 				A569DDA31EAA731000A32BBE /* Info.plist */,
-				A53B77401EAAA1880076C10D /* ReservationCell.swift */,
 			);
 			path = "Global Discovery Vacation";
 			sourceTree = "<group>";
@@ -135,9 +183,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50E797E1EB7D1A2006E4521 /* MembershipViewController.swift in Sources */,
 				A53B77411EAAA1880076C10D /* ReservationCell.swift in Sources */,
-				A569DD9A1EAA731000A32BBE /* HomeViewController.swift in Sources */,
+				A50E79801EB7D855006E4521 /* ReservationDetailsViewController.swift in Sources */,
+				A5B024D21EBA3FE50073C681 /* ScrollingTabBarAnimation.swift in Sources */,
+				A569DD9A1EAA731000A32BBE /* ReservationViewController.swift in Sources */,
+				A5B024D41EBA4BDC0073C681 /* HelpViewController.swift in Sources */,
+				A5665DF11EB7A232001AC32D /* MainViewController.swift in Sources */,
+				A50E79851EB7DD88006E4521 /* Reservation.swift in Sources */,
 				A569DD981EAA731000A32BBE /* AppDelegate.swift in Sources */,
+				A50E79871EB7DD9E006E4521 /* Membership.swift in Sources */,
+				A57E18761EBA6B2300F8CA9C /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
