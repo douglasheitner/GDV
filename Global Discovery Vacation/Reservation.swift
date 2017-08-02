@@ -10,4 +10,9 @@ import Foundation
 
 class Reservation {
     
+    let name: String
+    
+    init(resortName: String) {
+        name = resortName
+    }
 }

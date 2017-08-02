@@ -35,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(),for: .any, barMetrics: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
         
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "OpenSans", size: 8)!], for: .normal)
+        
         UITabBar.appearance().tintColor = .orange
         
         UIApplication.shared.statusBarStyle = .lightContent

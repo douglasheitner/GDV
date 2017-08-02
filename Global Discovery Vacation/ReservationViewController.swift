@@ -10,24 +10,27 @@ import UIKit
 
 class ReservationViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    var reservations: [Reservation]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         collectionView?.backgroundColor = UIColor.init(red: 51/255, green: 153/255, blue: 255/255, alpha: 1)
         collectionView?.register(ReservationCell.self, forCellWithReuseIdentifier: "cellId")
-        collectionView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "GDV-logo-short"))
-        
+        navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "imgGDV-logo-short"))
+        fetchReservations()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return (reservations?.count)!
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! ReservationCell
         cell.backgroundColor = UIColor.init(red: 245/255, green: 251/255, blue: 243/255, alpha: 1)
         cell.clipsToBounds = true
+        cell.resortNameLabel.text = reservations?[indexPath.item].name
+        
         return cell
     }
     
@@ -36,7 +39,13 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(ReservationDetailsViewController(reservation: (reservations?[indexPath.item])!), animated: true)
+    }
+    
+    func fetchReservations() {
+        reservations = [Reservation(resortName: "Resort 1"),
+                        Reservation(resortName: "Resort 2"),
+                        Reservation(resortName: "Resort 3")]
         
-        navigationController?.pushViewController(ReservationDetailsViewController(), animated: true)
     }
 }

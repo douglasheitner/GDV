@@ -14,7 +14,7 @@ class ReservationCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
     }
-    
+        
     let resortThumbnailImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "resort-pic")
@@ -28,7 +28,7 @@ class ReservationCell: UICollectionViewCell {
     
     let arrivalImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "Arrival")
+        imageView.image = #imageLiteral(resourceName: "imgArrival")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -37,7 +37,7 @@ class ReservationCell: UICollectionViewCell {
     
     let departureImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "Depature")
+        imageView.image = #imageLiteral(resourceName: "imgDepature")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -75,9 +75,8 @@ class ReservationCell: UICollectionViewCell {
     let resortNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "SAND PEBBLES"
-        label.font = UIFont.systemFont(ofSize: 16, weight: UIFontWeightLight)
-        label.font = UIFont(name: "Avenir Next", size: 16)
+        label.font = UIFont(name: "OpenSans-Regular", size: 16)
+        label.text = "SANDS HOTEL"
         return label
     }()
     
@@ -85,8 +84,7 @@ class ReservationCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Saturday 12/9/2017"
-//        label.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight)
-        label.font = UIFont(name: "Avenir Next", size: 12)
+        label.font = UIFont(name: "OpenSans-Light", size: 12)
 
         return label
     }()
@@ -95,8 +93,7 @@ class ReservationCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Saturday 12/16/2017"
-        label.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight)
-        label.font = UIFont(name: "Avenir Next", size: 12)
+        label.font = UIFont(name: "OpenSans-Light", size: 12)
 
         return label
     }()
@@ -104,12 +101,13 @@ class ReservationCell: UICollectionViewCell {
     let reservationNumber: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Reservation #: 6949503"
-        label.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightUltraLight)
+        label.text = "Reservation: 6949503"
+        label.font = UIFont(name: "OpenSans-Light", size: 12)
         return label
     }()
     
     func setupViews() {
+        
         addSubview(orangeBubble)
         orangeBubble.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
         orangeBubble.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -80).isActive = true
@@ -164,11 +162,10 @@ class ReservationCell: UICollectionViewCell {
         addSubview(reservationNumber)
         reservationNumber.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
         reservationNumber.topAnchor.constraint(equalTo: checkOutLabel.bottomAnchor, constant: 4).isActive = true
-
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
+    }    
 }

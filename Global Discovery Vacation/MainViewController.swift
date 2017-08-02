@@ -16,21 +16,27 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         credentialCheck()
         
         self.delegate = self
+        
+//        let tabAppearance = UITabBarItem.appearance()
+//        let tabAttributes = [NSFontAttributeName: UIFont(name: "OpenSans", size: 8)!]
+//        tabAppearance.setTitleTextAttributes(tabAttributes, for: .normal)
+        
+        
         tabBar.isTranslucent = false
         
         let layout = UICollectionViewFlowLayout()
         let navController = UINavigationController(rootViewController: ReservationViewController(collectionViewLayout: layout))
         navController.title = "Reservations"
-        navController.tabBarItem.image = #imageLiteral(resourceName: "Reservation")
+        navController.tabBarItem.image = #imageLiteral(resourceName: "imgReservation")
         
         
         let membershipController = UINavigationController(rootViewController: MembershipViewController())
         membershipController.title = "Membership"
-        membershipController.tabBarItem.image = #imageLiteral(resourceName: "Membership")
+        membershipController.tabBarItem.image = #imageLiteral(resourceName: "imgMembership")
         
-        let helpVC = HelpViewController()
+        let helpVC = UINavigationController(rootViewController: HelpViewController())
         helpVC.title = "Contact Us"
-        helpVC.tabBarItem.image = #imageLiteral(resourceName: "Phone")
+        helpVC.tabBarItem.image = #imageLiteral(resourceName: "imgPhone")
 
         viewControllers = [navController,membershipController,helpVC]
         
