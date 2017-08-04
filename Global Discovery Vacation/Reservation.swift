@@ -10,9 +10,24 @@ import Foundation
 
 class Reservation {
     
-    let name: String
+    private let _reservationNumber: Int
+    private let _resortName: String
     
-    init(resortName: String) {
-        name = resortName
+    var reservationNumber: Int {
+        get {
+            return _reservationNumber
+        }
+    }
+    
+    var resortName: String {
+        get {
+            return _resortName
+        }
+    }
+   
+    init(reservationNumber: Int, resortName: String) {
+        
+        self._reservationNumber = reservationNumber
+        self._resortName = resortName
     }
 }

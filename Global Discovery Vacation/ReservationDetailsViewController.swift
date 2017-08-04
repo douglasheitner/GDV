@@ -10,18 +10,16 @@ import UIKit
 
 class ReservationDetailsViewController: UIViewController{
     
-    let res: Reservation
+    let reservation: Reservation
     
     init(reservation: Reservation) {
         
-        res = reservation
+        self.reservation = reservation
 
         super.init(nibName: nil, bundle: nil)
         
         setupView()
     }
-    
-    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -36,7 +34,7 @@ class ReservationDetailsViewController: UIViewController{
     }()
     
     func setupView() {
-        checkInLabel.text = res.name
+        
     }
     
     override func viewDidLoad() {

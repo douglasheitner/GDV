@@ -26,10 +26,11 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! ReservationCell
         cell.backgroundColor = UIColor.init(red: 245/255, green: 251/255, blue: 243/255, alpha: 1)
         cell.clipsToBounds = true
-        cell.resortNameLabel.text = reservations?[indexPath.item].name
+        cell.resortNameLabel.text = reservations?[indexPath.item].resortName
         
         return cell
     }
@@ -43,9 +44,12 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
     }
     
     func fetchReservations() {
-        reservations = [Reservation(resortName: "Resort 1"),
-                        Reservation(resortName: "Resort 2"),
-                        Reservation(resortName: "Resort 3")]
+        reservations = [Reservation(reservationNumber: 123, resortName: "Resort 1"),
+                        Reservation(reservationNumber: 123, resortName: "Resort 2"),
+                        Reservation(reservationNumber: 123, resortName: "Resort 3"),
+                        Reservation(reservationNumber: 123, resortName: "Resort 4"),
+                        Reservation(reservationNumber: 123, resortName: "Resort 5"),
+                        Reservation(reservationNumber: 123, resortName: "Resort 6")]
         
     }
 }

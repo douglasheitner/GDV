@@ -56,7 +56,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
     
     func credentialCheck() {
         
-        let isLoggedIn = false
+        let isLoggedIn = true
         
         if isLoggedIn {
             self.perform(#selector(showLoginController), with: nil, afterDelay: 0.01)
