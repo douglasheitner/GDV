@@ -27,6 +27,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         let layout = UICollectionViewFlowLayout()
         let navController = UINavigationController(rootViewController: ReservationViewController(collectionViewLayout: layout))
         navController.title = "Reservations"
+        navController.navigationBar.prefersLargeTitles = true
         navController.tabBarItem.image = #imageLiteral(resourceName: "imgReservation")
         
         
@@ -64,7 +65,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         
     }
     
-    func showLoginController() {
+    @objc func showLoginController() {
         let loginVC = LoginViewController()
         self.present(loginVC, animated: true, completion: {
             //Do something else

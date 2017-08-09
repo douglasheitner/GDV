@@ -10,7 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
 
@@ -27,15 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupBars() {
-        
+
         UINavigationBar.appearance().barTintColor = UIColor.init(red: 51/255, green: 153/255, blue: 255/255, alpha: 1)
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().setBackgroundImage(UIImage(),for: .any, barMetrics: .default)
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         UINavigationBar.appearance().shadowImage = UIImage()
-        
-        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "OpenSans", size: 8)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "OpenSans", size: 8)!], for: .normal)
         
         UITabBar.appearance().tintColor = .orange
         

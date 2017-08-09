@@ -16,6 +16,6 @@ class HelpViewController: UIViewController {
         navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "imgGDV-logo-short"))
 
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
     }
 }

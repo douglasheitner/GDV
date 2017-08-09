@@ -17,8 +17,6 @@ class ReservationDetailsViewController: UIViewController{
         self.reservation = reservation
 
         super.init(nibName: nil, bundle: nil)
-        
-        setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,14 +31,13 @@ class ReservationDetailsViewController: UIViewController{
         
     }()
     
-    func setupView() {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.view.addSubview(checkInLabel)
+        navigationItem.largeTitleDisplayMode = .always
+        navigationItem.title = reservation.resortName
+        checkInLabel.text = reservation.resortName
         checkInLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
         checkInLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
 

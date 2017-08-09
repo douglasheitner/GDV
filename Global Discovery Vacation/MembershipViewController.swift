@@ -27,5 +27,11 @@ class MembershipViewController: UIViewController {
         
         navigationItem.title = "GD652154"
         //navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "imgGDV-logo-short"))
+        
+        setupView()
+    }
+    
+    func setupView() {
+        
     }
 }

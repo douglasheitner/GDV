@@ -17,7 +17,9 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
     
         collectionView?.backgroundColor = UIColor.init(red: 51/255, green: 153/255, blue: 255/255, alpha: 1)
         collectionView?.register(ReservationCell.self, forCellWithReuseIdentifier: "cellId")
-        navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "imgGDV-logo-short"))
+        navigationItem.title = "Reservations"
+        navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "GDV-logo-smal"))
+
         fetchReservations()
     }
     
@@ -44,6 +46,8 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
     }
     
     func fetchReservations() {
+        navigationItem.largeTitleDisplayMode = .never
+        
         reservations = [Reservation(reservationNumber: 123, resortName: "Resort 1"),
                         Reservation(reservationNumber: 123, resortName: "Resort 2"),
                         Reservation(reservationNumber: 123, resortName: "Resort 3"),
