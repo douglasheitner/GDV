@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 2
-        
         textField.keyboardType = .default
         return textField
     }()

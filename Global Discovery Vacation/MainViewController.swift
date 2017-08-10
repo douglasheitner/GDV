@@ -42,11 +42,12 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         viewControllers = [navController,membershipController,helpVC]
         
         let topBorder = CALayer()
-        topBorder.frame = CGRect(x: 0, y: 0, width: 1000, height: 0.5)
+        topBorder.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         topBorder.backgroundColor = UIColor.init(red: 229/255, green: 231/255, blue: 235/255, alpha: 1).cgColor
         
         tabBar.layer.addSublayer(topBorder)
         tabBar.clipsToBounds = true
+        tabBar.barTintColor = UIColor.init(red: 245/255, green: 251/255, blue: 243/255, alpha: 1)
         
     }
     
