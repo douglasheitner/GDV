@@ -11,12 +11,14 @@ import UIKit
 class ReservationViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var reservations: [Reservation]?
+    var headerList = ["Upcoming", "Previous"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         collectionView?.backgroundColor = UIColor.init(red: 51/255, green: 153/255, blue: 255/255, alpha: 1)
         collectionView?.register(ReservationCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView?.register(ReservationListHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerCell")
         navigationItem.title = "Reservations"
         navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "GDV-logo-smal"))
 
@@ -45,6 +47,36 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
         navigationController?.pushViewController(ReservationDetailsViewController(reservation: (reservations?[indexPath.item])!), animated: true)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.width, height: 50)
+    }
+    
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as! ReservationListHeader
+            
+//            if (indexPath[0] == 0) {
+//                
+//                header.headerText = "Upcoming"
+//
+//                return header
+//                
+//            } else if (indexPath[0] == 1) {
+//                header.headerText = "Previews"
+//                return header
+//            }
+//            header.headerText = "NOOO"
+//            return header
+//        default:
+//            return UICollectionReusableView()
+//        }
+    }
+    
     func fetchReservations() {
         navigationItem.largeTitleDisplayMode = .never
         
@@ -57,3 +89,65 @@ class ReservationViewController: UICollectionViewController, UICollectionViewDel
         
     }
 }
+
+class ReservationListHeader: UICollectionReusableView {
+    
+    let headerText: String?
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    func setupView() {
+        
+        let headerLabel: UILabel = {
+            let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
+            label.font = UIFont(name: "OpenSans-Semibold", size: 18)
+            label.textColor = .white
+            label.text = headerText
+            return label
+        }()
+        
+        self.addSubview(headerLabel)
+        
+        headerLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
+        headerLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
+        
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
