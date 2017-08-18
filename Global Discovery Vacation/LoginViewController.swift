@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 2
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
         return button
     }()
     
@@ -108,7 +109,6 @@ class LoginViewController: UIViewController {
             self.view.frame = CGRect(x: 0, y: -50, width: self.view.frame.width, height: self.view.frame.height)
             
         }, completion: nil)
-        
     }
 }
 

@@ -44,6 +44,7 @@ class ReservationCell: UICollectionViewCell {
         return imageView
     }()
     
+    // Turn bubbles into image
     let orangeBubble: UIView = {
         let bubble = UIView()
         bubble.backgroundColor = UIColor.init(red: 239/255, green: 129/255, blue: 9/255, alpha: 0.1)
@@ -75,7 +76,7 @@ class ReservationCell: UICollectionViewCell {
     let resortNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "OpenSans-Regular", size: 16)
+        label.font = UIFont(name: "OpenSans-Regular", size: 18)
         label.text = "SANDS HOTEL"
         return label
     }()
@@ -84,7 +85,7 @@ class ReservationCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Saturday 12/9/2017"
-        label.font = UIFont(name: "OpenSans-Light", size: 12)
+        label.font = UIFont(name: "OpenSans-Light", size: 14)
 
         return label
     }()
@@ -93,7 +94,7 @@ class ReservationCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Saturday 12/16/2017"
-        label.font = UIFont(name: "OpenSans-Light", size: 12)
+        label.font = UIFont(name: "OpenSans-Light", size: 14)
 
         return label
     }()
@@ -102,7 +103,7 @@ class ReservationCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Reservation: 6949503"
-        label.font = UIFont(name: "OpenSans-Light", size: 12)
+        label.font = UIFont(name: "OpenSans-Light", size: 14)
         return label
     }()
     
@@ -136,13 +137,14 @@ class ReservationCell: UICollectionViewCell {
     
         addSubview(resortNameLabel)
         resortNameLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
-        resortNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -30).isActive = true
+        resortNameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -35).isActive = true
+        resortNameLabel.rightAnchor.constraint(equalTo: resortThumbnailImageView.leftAnchor, constant: -8).isActive = true
         
         addSubview(arrivalImageView)
         arrivalImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
         arrivalImageView.topAnchor.constraint(equalTo: resortNameLabel.bottomAnchor, constant: 7).isActive = true
-        arrivalImageView.heightAnchor.constraint(equalToConstant: 10).isActive = true
-        arrivalImageView.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        arrivalImageView.heightAnchor.constraint(equalToConstant: 12).isActive = true
+        arrivalImageView.widthAnchor.constraint(equalToConstant: 12).isActive = true
         
         addSubview(checkInLabel)
         checkInLabel.leftAnchor.constraint(equalTo: arrivalImageView.rightAnchor, constant: 8).isActive = true
@@ -152,8 +154,8 @@ class ReservationCell: UICollectionViewCell {
         addSubview(departureImageView)
         departureImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
         departureImageView.topAnchor.constraint(equalTo: checkInLabel.bottomAnchor, constant: 7).isActive = true
-        departureImageView.heightAnchor.constraint(equalToConstant: 10).isActive = true
-        departureImageView.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        departureImageView.heightAnchor.constraint(equalToConstant: 12).isActive = true
+        departureImageView.widthAnchor.constraint(equalToConstant: 12).isActive = true
         
         addSubview(checkOutLabel)
         checkOutLabel.leftAnchor.constraint(equalTo: departureImageView.rightAnchor, constant: 8).isActive = true

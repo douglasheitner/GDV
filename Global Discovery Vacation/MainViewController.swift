@@ -21,13 +21,12 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 //        let tabAttributes = [NSFontAttributeName: UIFont(name: "OpenSans", size: 8)!]
 //        tabAppearance.setTitleTextAttributes(tabAttributes, for: .normal)
         
-        
         tabBar.isTranslucent = false
         
         let layout = UICollectionViewFlowLayout()
         let navController = UINavigationController(rootViewController: ReservationViewController(collectionViewLayout: layout))
         navController.title = "Reservations"
-        navController.navigationBar.prefersLargeTitles = true
+        //navController.navigationBar.prefersLargeTitles = true
         navController.tabBarItem.image = #imageLiteral(resourceName: "imgReservation")
         
         
