@@ -28,6 +28,8 @@
 		A596A6B31EBBC02B008537E0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A596A6A91EBBC02B008537E0 /* OpenSans-Regular.ttf */; };
 		A596A6B41EBBC02B008537E0 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A596A6AA1EBBC02B008537E0 /* OpenSans-Semibold.ttf */; };
 		A596A6B51EBBC02B008537E0 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A596A6AB1EBBC02B008537E0 /* OpenSans-SemiboldItalic.ttf */; };
+		A59B1E611F4C8B3F002D1CE3 /* Amenities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B1E601F4C8B3F002D1CE3 /* Amenities.swift */; };
+		A59B1E631F4C8BAB002D1CE3 /* Charges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B1E621F4C8BAB002D1CE3 /* Charges.swift */; };
 		A5B024D21EBA3FE50073C681 /* ScrollingTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B024D11EBA3FE50073C681 /* ScrollingTabBarAnimation.swift */; };
 		A5B024D41EBA4BDC0073C681 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B024D31EBA4BDC0073C681 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		A596A6A91EBBC02B008537E0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		A596A6AA1EBBC02B008537E0 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		A596A6AB1EBBC02B008537E0 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		A59B1E601F4C8B3F002D1CE3 /* Amenities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amenities.swift; sourceTree = "<group>"; };
+		A59B1E621F4C8BAB002D1CE3 /* Charges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charges.swift; sourceTree = "<group>"; };
 		A5B024D11EBA3FE50073C681 /* ScrollingTabBarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTabBarAnimation.swift; sourceTree = "<group>"; };
 		A5B024D31EBA4BDC0073C681 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +80,8 @@
 			children = (
 				A50E79841EB7DD88006E4521 /* Reservation.swift */,
 				A50E79861EB7DD9E006E4521 /* Membership.swift */,
+				A59B1E601F4C8B3F002D1CE3 /* Amenities.swift */,
+				A59B1E621F4C8BAB002D1CE3 /* Charges.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -122,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				A596A6A01EBBBFE0008537E0 /* Resources */,
-				A569DD971EAA731000A32BBE /* AppDelegate.swift */,
 				A50E79831EB7DD51006E4521 /* Controller */,
 				A50E79821EB7DD4A006E4521 /* View */,
 				A50E79811EB7DD43006E4521 /* Model */,
@@ -134,6 +139,7 @@
 		A596A6A01EBBBFE0008537E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A569DD971EAA731000A32BBE /* AppDelegate.swift */,
 				A569DDA01EAA731000A32BBE /* LaunchScreen.storyboard */,
 				A569DDA31EAA731000A32BBE /* Info.plist */,
 				A596A6A11EBBBFED008537E0 /* Fonts */,
@@ -250,6 +256,8 @@
 				A5665DF11EB7A232001AC32D /* MainViewController.swift in Sources */,
 				A50E79851EB7DD88006E4521 /* Reservation.swift in Sources */,
 				A569DD981EAA731000A32BBE /* AppDelegate.swift in Sources */,
+				A59B1E611F4C8B3F002D1CE3 /* Amenities.swift in Sources */,
+				A59B1E631F4C8BAB002D1CE3 /* Charges.swift in Sources */,
 				A50E79871EB7DD9E006E4521 /* Membership.swift in Sources */,
 				A57E18761EBA6B2300F8CA9C /* LoginViewController.swift in Sources */,
 			);
