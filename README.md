@@ -2,6 +2,6 @@
 
 This is sample of what is coming on our new GDV app. Stay tuned for my info at our ![blog](http://www.globaltravelsblog.com).
 
-![GDV](/Screenshots/gdvmain.png)
+![GDV](/Screenshots/maingdv.png)
 
 ![login](/Screenshots/logingdv.png)
